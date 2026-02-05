@@ -71,14 +71,10 @@ const Auth = () => {
 
                 <div className="auth-switch">
                     {mode === "signup" ? (
-<<<<<<< HEAD
-                        <p>Already have an account? <button type="button" onClick={()=>setMode("login")} className='auth-link'>Login</button></p>
-=======
-                        <p>Already have an account? <span onClick={()=>setMode("login")} className='auth-link'>Login</span></p>
->>>>>>> 81cd088 (span tag spelling changed)
-                         
+                        <p>Already have an account? <span type="button" onClick={()=>setMode("login")} className='auth-link'>Login</span></p>
+              
                     ) : (
-                        <p>Don't have an account? <button type="button" onClick={()=>setMode("signup")} className='auth-link'>Sign Up</button></p>
+                        <p>Don't hava an account? <span onClick={()=>setMode("signup")} className='auth-link'>Sign Up</span></p>
                     )}
                    
                 </div>
