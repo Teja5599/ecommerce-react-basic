@@ -65,12 +65,18 @@ const Auth = () => {
                         />
                         {errors.password && <span className='form-error'>{errors.password.message}</span>}
                     </div>
+
+                    <button type='submit' className='btn btn-primary btn-large'>{mode === "signup" ? 'Sign Up' : "Login"}</button>
+                </form>
+
                 <div className="auth-switch">
                     {mode === "signup" ? (
-                        <p>Already have an account? <button type="button" onClick={()=>setMode("login")} className='auth-link'>Login</button></p>
+                        <p>Already have an account? <span type="button" onClick={()=>setMode("login")} className='auth-link'>Login</span></p>
+              
                     ) : (
-                        <p>Don't have an account? <button type="button" onClick={()=>setMode("signup")} className='auth-link'>Sign Up</button></p>
+                        <p>Don't hava an account? <span onClick={()=>setMode("signup")} className='auth-link'>Sign Up</span></p>
                     )}
+                   
                 </div>
             </div>
         </div>
